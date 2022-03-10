@@ -59,7 +59,22 @@ mii
 
 # ------------------------
 
+# Arrays :
 
+# it is multi dimensional homogenous data struc
+
+vec1 <- c(1,2,3,4,5,6)
+vec2 <- c(7,8,9,10,11,12)
+
+ai <- array(c(vec1, vec2), dim = c(2,3,2)) # 2 shows  nmbr of row 3 shows no of columns last 2 shows dimension
+ai
+ai[2,2,2]
+# it basically state that show me 
+# second element of 2nd row in the second dimension
+
+# we can say that array is the stack of the matrices
+
+ai[2,3,1] # will show 6
 
 
 
