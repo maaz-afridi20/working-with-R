@@ -158,7 +158,55 @@ length(thismatrix) # showing length
 # rbind() for rows and cbind() for column
 
 
+# -------------------------------
 
+
+# DATA FRAMES : 
+
+# it is use to show data in tabular form
+
+# we have to use data.frame() to create data frame.
+
+dataframe <- data.frame(training = c("strength","Stamina","Other"),
+                        Pulse = c(100,150,120),
+                        Duration = c(60, 32, 89))
+print(dataframe)
+
+
+# we can use 3 different method for extracting data from data frame
+print(dataframe[1]) # this will print the training portion
+
+print(dataframe$Pulse) # this will extract data from pulse column
+
+print(dataframe$Duration) # will print all the duration
+
+
+# use rbing to add new rows in dataframe
+
+new_row <- rbind(dataframe, c("Strength",10,20))
+print(dataframe)
+
+new_row
+
+new_row2 <- rbind(dataframe, c("Motion", 99, 180))
+new_row2
+
+
+# Adding new column in  data frame 
+
+new_col <- cbind(dataframe, Steps = c(1000,2000,3000))
+new_col
+
+# so here the steps will be the name of the column
+# and the values will be given to the rows that are 
+# present
+
+
+# ------------
+
+dim(dataframe) # Finding the dimensions
+ncol(dataframe) # finding number of columns
+nrow(dataframe) # finding number of rows
 
 
 
