@@ -86,6 +86,79 @@ listy3 <- c(listy1,listy2)
 print(listy3)
 listy3[1]
 
+# ----------------------------
+
+ # Matrices :
+
+  #matrix is 2 dimensional data set with rows and
+  #columns
+
+
+thismat <- matrix(c(1,2,3,4,5,6), nrow = 3, ncol = 2)
+print(thismat)
+
+thismatt <- matrix(c("apple","mango","orange","cherry"),ncol = 2, nrow = 2)
+print(thismatt)
+print(thismatt[2,2]) # will print cherry
+
+print(thismatt[1,2]) # this will print item in first row and in the second column
+
+
+print(thismatt[,1])
+
+# Accessing whole row or column by just putting commas
+
+print(thismatrix[1,]) 
+# this will print the first row(1) and all the 
+# columns that are there in that matrix
+print(thismatrix[2,]) # whole 2nd row.
+
+
+# ======================
+# same is the case with Column 
+
+print(thismatrix[,1]) # this will print 1st column
+# and all the rows that are present
+thismatrix[,3]
+
+
+# -------------------------
+
+# Accessing More Than One Rows
+
+thismatrix <- matrix(c("apple", "banana",
+                       "cherry", "orange",
+                       "grape", "pineapple",
+                       "pear", "melon", "fig"),
+                     ncol = 3, nrow = 3)
+print(thismatrix)
+
+thismatrix[c(1,2),] # this will print 1 row and 2 row
+thismatrix[c(1,3),] # this will print 1 row and 3 row
+
+thismatrix[c(2,3),] # this will print 2 and 3 row.
+
+# Accessing More Than One Column :
+
+thismatrix[,c(1,2)] # will print 2 and 1 column
+thismatrix[,c(3,1)] # will print 3 and 1 column
+
+
+# checking the dimension of the matrix
+ 
+dim(thismatrix) # will show 3,3
+length(thismatrix) # showing length
+
+# finding something in matrix
+
+"apple" %in% thismatrix
+
+
+# in order to add column or row we have to use
+# rbind() for rows and cbind() for column
+
+
+
 
 
 
