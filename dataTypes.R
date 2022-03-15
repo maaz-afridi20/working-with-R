@@ -76,6 +76,147 @@ ai[2,2,2]
 
 ai[2,3,1] # will show 6
 
+# ----------------------------------
+
+
+# Factors :
+ 
+
+colors = c("blue","green","yellow")
+colors
+as.factor(colors) -> colors
+colors
+# -----------------------------------------
+print('hello world')
+
+5 + 5
+
+a = 10
+b = "Ali"
+
+print(a)
+print(b)
+
+# ------------------
+for(x in 1:10){
+  print(x)
+}
+# -------------------------
+
+fruits <- list("apple","ball","cat","ilme","doggy")
+for (i in fruits) {
+  print(i)
+}
+
+# -----------------------------
+name <- "John"
+age <- 19
+print(name)
+print(age)
+
+text <- "Awesome"
+paste("the text is ",text)
+
+text2 <- "ilme"
+text3 <- "Doe"
+paste(text2,text3)
+
+
+
+var1 <- var2 <- var3 <- "MAX"
+print(var1)
+print(var2)
+
+
+
+num1 <- 10.5
+class(num1)
+
+# -----------
+x <- 100L
+print(x)
+class(x)
+# -------------
+x2 <- 3+3i
+class(x2)
+# -------------
+
+x3 <- T
+class(x3)
+
+x4 <- 5+4i
+class(x4)
+
+y1 <- 5i
+class(y1)
+# --------------------------
+
+# conversion :
+
+xy <- 1L
+class(xy)
+as.numeric(xy)
+# ---------------------
+
+# simple Maths
+
+max(5,10,15)
+min(5,10,15)
+sqrt(16)
+
+
+
+
+
+a <- 100
+b <- 150
+if(a<b){
+  print('a is less')
+}else{
+  print('b is less')
+}
+# _______________________________
+c <- 100
+d <- 100
+if(c<d){
+  print('less')
+}else if(c==d){
+  print('both are equal')
+}
+# ----------------------------------
+dice <- c(1,2,3,4,5,6)
+for(ii in dice){
+  print(ii)
+}
+# ------------------
+
+things <- list("apple","ball","catty","He","she")
+for (thig in things) {
+  if(thig == "catty"){
+    break
+  }
+  print(thig)
+}
+# --------------------
+
+dice <- 1:6
+for (x in dice) {
+  if(x == 6){
+    print(paste("The number is ", x, "Yahtzee"))
+  }else{
+    print(paste("The number is ",x,"not Yahtzee"))
+  }
+}
+# -------------------------
+
+
+
+
+
+
+
+
+
 
 
 
