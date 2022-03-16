@@ -16,6 +16,13 @@ if(iris$Sepal.Length[1]<4){
 
 # -----------------------
 
+ # LOOPS : 
+
+vec1 <- 1:10
+for (i in vec1) {
+  print(i+10)
+}
+
 
 
 
