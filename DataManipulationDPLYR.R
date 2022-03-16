@@ -43,10 +43,30 @@ View(endwithe)
 laptops %>% select(ends_with("M")) -> endwithm
 View(endwithm)
 
+# -----------------------------
+
+  # FILTER : 
+
+# by the filter function we can record some
+# specific records.
+
+laptops %>% filter(Manufacturer == "Dell") -> laptop_Dell
+View(laptop_Dell)
+# this will only show that laptops that are of Dell
+
+laptops %>% filter(Weight > "1.0kg") -> laptop_weight
+View(laptop_weight)
+# now this will print all the laptops that weighs more
+# than one kg.
+
+laptops %>% filter(Weight < "1.0kg") -> laptop_weight_less
+View(laptop_weight_less)
 
 
-
-
+laptops %>% filter(Manufacturer == "Apple" & RAM == "8GB") -> apple_specs
+View(apple_specs)
+# this will show laptops of apple
+# with the ram size = 8gb
 
 
 
