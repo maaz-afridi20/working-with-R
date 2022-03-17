@@ -68,6 +68,40 @@ View(apple_specs)
 # this will show laptops of apple
 # with the ram size = 8gb
 
+# --------------------------
+
+# FILTER WITH SELECT :  
+
+# also for using both at the same time we have to use
+# pipe operator.
+
+library(dplyr)
+laptopsAgain <- read.csv('G:/study materials/python video/csvFiles/laptops.csv')
+laptopsAgain %>% select("Model.Name","Category") %>% filter(Operating.System == "mac.OS") -> filterselect
+View(laptop_filter)
+
+
+
+
+
+diamonds <- read.csv('G:/study materials/python video/csvFiles/diamonds.csv')
+View(diamonds)
+
+diamonds %>% select("cut","price") %>% filter(price < 600) -> diamondcut
+View(diamondcut)
+
+# so now this will print the cut and the price column
+# inside the diamond data.csv file and will print the 
+# result of that column whose price is less that 600
+# so in that case we combine the select and the filter
+# with each other.
+
+
+diamonds %>% select("carat","cut") %>% filter(price < 500) -> idealcut
+View(idealcut)
+
+
+
 
 
 
